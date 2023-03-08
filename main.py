@@ -20,7 +20,7 @@ data = {
 authentification = s.post("https://cas2.uvsq.fr/cas/login?service=https%3A%2F%2Fbulletins.iut-velizy.uvsq.fr%2Fservices%2FdoAuth.php%3Fhref%3Dhttps%253A%252F%252Fbulletins.iut-velizy.uvsq.fr%252F", data = data)
 request = s.get("https://bulletins.iut-velizy.uvsq.fr/services/doAuth.php?href=https%3A%2F%2Fbulletins.iut-velizy.uvsq.fr%2F")
 request_html = BeautifulSoup(request.text, 'html.parser')
-notes_request = s.get("https://bulletins.iut-velizy.uvsq.fr/services/data.php?q=dataPremi%C3%A8reConnexion")
+notes_request = s.get("https://bulletins.iut-velizy.uvsq.fr/services/data.php?q=dataPremi%C3%A8reConnexion&semestre=415")
 notes = json.loads(notes_request.text)
 
 print("\n")
