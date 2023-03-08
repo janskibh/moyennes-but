@@ -50,7 +50,10 @@ for ue in notes['relevé']['ues']:
     for m in moyennes:
         moyenne_total += m
 
-    print(ue + " : " + str(round(moyenne_total/coef_total, 2)))
+    if coef_total > 0:
+        print(ue + " : " + str(round(moyenne_total/coef_total, 2)))
+    else:
+        print(ue + " : ~ ")
 
 absences = notes['relevé']['semestre']['absences']['total']
 absences_injustifiées = notes['relevé']['semestre']['absences']['injustifie']
