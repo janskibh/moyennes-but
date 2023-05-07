@@ -4,7 +4,7 @@ print('\n=> http://localhost:8000')
 
 httpd = HTTPServer(('localhost', 8000), SimpleHTTPRequestHandler)
 
-for i in range(3):
+for i in range(4):
     try:
         httpd.handle_request()
     except Exception as e:
