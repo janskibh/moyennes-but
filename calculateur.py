@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import json
 import getpass
 import base64
-import numpy as np
 
 s = requests.session()
 
