@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import json
 import getpass
 import base64
-import colorsys
 import numpy as np
 
 s = requests.session()
@@ -51,12 +50,6 @@ data = {
 
     }
 }
-
-def spectrum(n : int):
-    hsv = [(h, 1, 1) for h in np.linspace(0, 3/10, n)]
-    rgb = [colorsys.hsv_to_rgb(*tup) for tup in hsv]
-    defloat = lambda x: tuple((int(255 * i) for i in x))
-    return [defloat(x) for x in rgb]
 
 colors = ["#ca1414", "#ca1414", "#ca1414", "#ca1414", "#ea1818", "#ea1818", "#ea1818", "#ea1818", "#eb6b17", "#ebb117", "#ebe117", "#e5eb17", "#d8eb17", "#cbeb17","#bfeb17", "#9feb17", "#6ceb17", "#2dde15", "#28c513", "#13be7f", "#7013bf"]
 
