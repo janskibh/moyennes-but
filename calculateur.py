@@ -122,3 +122,5 @@ with open("notes.json", "w") as notes_file:
     notes_file.close()
 
 print("\nAbsences injustifiées : " + str(absences_injustifiées) + "/" + str(absences))
+
+input("Appuyer sur Entrez pour sortir...")
