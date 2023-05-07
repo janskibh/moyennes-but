@@ -10,3 +10,5 @@ for i in range(3):
     except Exception as e:
         print(e)
 httpd.server_close()
+
+input("Appuyer sur Entrez pour sortir...")
