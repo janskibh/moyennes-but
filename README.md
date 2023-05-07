@@ -16,7 +16,7 @@ librairies utilisées :
 
 __________________________________________________________________________
 
-1. Lancer main.py
+1. Lancer calculateur.py
 2. Entrer les identifiants CAS UVSQ
 3. Les moyennes sont affichées dans le terminal comme dans la V2
 4. Lancer web.py
