@@ -22,3 +22,5 @@ __________________________________________________________________________
 4. Lancer web.py
 5. Ouvrir http://localhost:8000
 6. Normallement web.py devrait se fermer tout seul cependant, en raison des fichiers en cache, il se peut qu'il faille rafraichir la page pour que le programme se ferme.
+
+Version WEB aussi disponible sur http://vps.e59.fr/scodoplus
